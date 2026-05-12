@@ -1,8 +1,9 @@
+import os
 import random
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "8706527658:AAHLWacFvPiys3KDSFoJY4dO--5gTMT52zg"
+TOKEN = os.getenv("BOT_TOKEN")
 
 def score_die(value):
     if value in [2, 4]:
